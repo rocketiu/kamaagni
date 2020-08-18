@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+
+<body>
+  <ng ng-app="test">
+    <div class="container" ng-controller="Ctrl1">
+      <form id="userDetails">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>Kamaagni</h3>
+            <!--કામાગ્ની     -->
+            <hr>
+          </div>
+          <div class="col-sm-12 col-md-6 mx-auto">
+            <div class="input-group">
+              <span class="input-group-addon">Name</span>
+              <input id="msg" type="text" class="form-control" name="msg" placeholder="enter your user name">
+            </div>
+            <div class="btn-group btn-group-toggle top-space" data-toggle="buttons">
+              <label class="btn btn-secondary center-block">
+                <input type="radio" name="gender" id="male"> Male
+              </label>
+              <label class="btn btn-secondary center-block">
+                <input type="radio" name="gender" id="female"> Female
+              </label>
+            </div>
+            <div class="input-group top-space">
+              <button type="button" class="btn btn-outline-primary btn-block" ng-click="goNext()" href="/login.html">Next</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </ng>
+
+  <!-- Bootstrap  Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
